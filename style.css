@@ -1,0 +1,62 @@
+.gradient {
+    padding: 35px;
+    width: 1352px;
+    height: 203px;
+    background: 030427;
+    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(23, 159, 184, 1) 50%, rgba(2, 210, 253, 1) 100%);
+    border-radius: 30px;
+}
+
+.content-box {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 102px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.overlay {
+    width: auto;
+    height: 938px;
+    background-color: #EFF8FF;
+    border-radius: 35px;
+    padding: 0;
+}
+
+.form-box {
+    padding: 25px 34px 65px 33px;
+}
+
+.form-header {
+    width: 507px;
+    height: auto;
+    background-color: #00416A;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.text-part {
+    padding: 6px 101px 32px 26px;
+    gap: 20px;
+    color: #FFFFFF;
+}
+
+.header-text {
+    font-family: "Montserrat";
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.header-bottom-text {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.temporary {
+    width: auto;
+    height: 938px;
+    background-color: #EFF8FF;
+    border-radius: 35px;
+    padding: 0;
+}
