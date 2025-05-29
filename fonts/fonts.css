@@ -24,6 +24,13 @@
 }
 
 @font-face {
+    font-family: Montserrat;
+    src: url(./Montserrat-Italic.ttf);
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
     font-family: Roboto;
     src: url(./Roboto-Regular.ttf);
     font-weight: 400;

@@ -1,62 +1,208 @@
 .gradient {
-    padding: 35px;
-    width: 1352px;
-    height: 203px;
-    background: 030427;
-    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(23, 159, 184, 1) 50%, rgba(2, 210, 253, 1) 100%);
-    border-radius: 30px;
+  padding: 35px;
+  width: auto;
+  height: 203px;
+  background: 030427;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(23, 159, 184, 1) 50%,
+    rgba(2, 210, 253, 1) 100%
+  );
+  border-radius: 30px;
 }
 
 .content-box {
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    gap: 102px;
-    padding-top: 35px;
-    padding-bottom: 35px;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 102px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .overlay {
-    width: auto;
-    height: 938px;
-    background-color: #EFF8FF;
-    border-radius: 35px;
-    padding: 0;
+  width: auto;
+  height: 938px;
+  background-color: #eff8ff;
+  border-radius: 35px;
+  padding: 0;
 }
 
 .form-box {
-    padding: 25px 34px 65px 33px;
+  padding: 25px 34px 65px 33px;
 }
 
 .form-header {
-    width: 507px;
-    height: auto;
-    background-color: #00416A;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+  width: 507px;
+  height: auto;
+  background-color: #00416a;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 .text-part {
-    padding: 6px 101px 32px 26px;
-    gap: 20px;
-    color: #FFFFFF;
+  padding: 6px 101px 6px 26px;
+  gap: 20px;
+  color: #ffffff;
 }
 
 .header-text {
-    font-family: "Montserrat";
-    font-weight: bold;
-    font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 30px;
 }
 
 .header-bottom-text {
-    font-family: "Montserrat";
-    font-weight: 400;
-    font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
 }
 
-.temporary {
-    width: auto;
-    height: 938px;
-    background-color: #EFF8FF;
-    border-radius: 35px;
-    padding: 0;
+.input-label {
+  display: flex;
+  flex-direction: column;
+  padding-top: 33px;
+}
+
+.input-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.input {
+  width: 507px;
+  height: 54px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+}
+
+.select-input {
+  padding-top: 33px;
+  gap: 4px;
+}
+
+.select-rest {
+  width: 100%;
+  height: auto;
+  padding: 10px 14px;
+  line-height: 1.2;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid #000;
+  border-radius: 5px;
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 30px;
+}
+
+.input-checkbox {
+  display: flex;
+  padding-top: 31px;
+  align-items: flex-start;
+  width: 354px;
+  gap: 12px;
+}
+
+.checkbox {
+  -webkit-appearance: none;
+  appearance: none;  
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #ffffff;
+  cursor: pointer;
+  position: relative;
+  margin-top: 2px;
+  display: inline-block;
+}
+
+.checkbox:checked {
+    background-color: #2e7cf6;
+    border: none;
+}
+
+.checkbox:checked::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 7px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.checkbox-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  word-break: break-word;
+  white-space: normal;
+  display: inline-block;
+}
+
+.button {
+  padding-top: 64px;
+}
+
+.input-button {
+  width: 100%;
+  height: auto;
+  background-color: rgba(8, 57, 128, 1);
+  color: #ffffff;
+  border-radius: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 18px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.header {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 6px;
+  padding-bottom: 44px;
+}
+
+.second-header-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: medium;
+  margin: 0;
+}
+
+.point-list {
+  padding: 22px 60px;
+}
+
+.point {
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: medium;
+}
+
+.loyalty {
+  padding: 35px;
+  margin: 0 auto;
+  background: #eff8ff;
+  border-radius: 30px;
+}
+
+.loyalty-content {
+    font-family: "Montserrat", sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 1.3;
 }
