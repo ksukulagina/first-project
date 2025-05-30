@@ -2,69 +2,70 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Задание 1</title>
+    <title>Регистрация в программе лояльности</title>
+    <!-- Подключение шрифта и стилей из css -->
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <!-- Блок с градиентом -->
     <div class="gradient"></div>
+    <!-- Основной контейнер с контентом -->
     <div class="content-box">
       <section class="overlay">
+        <!-- Сама форма -->
         <section class="form-box">
+          <!-- Заголовок формы -->
           <section class="form-header">
             <div class="text-part">
               <p class="header-text">Добро пожаловать!</p>
-              <p class="header-bottom-text">
-                Заполните эту форму, чтобы зарегистрироваться и начать
-                пользоваться нашими услугами.
-              </p>
+              <p class="header-bottom-text">Заполните эту форму, чтобы зарегистрироваться и начать
+                пользоваться нашими услугами</p>
             </div>
           </section>
+          <!-- Поля регистрации -->
           <form method="get" action="../result">
+            <!-- Поле имя -->
             <label class="input-label">
               <span class="input-title">Ваше имя</span>
-              <input class="input" type="text" size="40" name="one-line" />
+              <input class="input" type="text" size="40" name="name" required />
             </label>
+            <!-- Поле телефон -->
             <label class="input-label">
               <span class="input-title">Телефон</span>
-              <input class="input" type="tel" size="40" name="one-line-tel" />
+              <input class="input" type="tel" size="40" name="phone" required />
             </label>
+            <!-- Поле почты -->
             <label class="input-label">
               <span class="input-title">Email (опционально)</span>
-              <input
-                class="input"
-                type="email"
-                size="40"
-                name="one-line-email"
-              />
-            </label>
-            <section class="select-input">
-              <label class="input-title">Какой ресторан посещаете чаще?</label>
-              <select class="select-rest" name="restaurant" id="restaurant">
-                <option value="" disabled-selection>
-                  -- Выберите основной ресторан --
-                </option>
+              <input class="input" type="email" size="40" name="email"/>
+           <!-- Выпадашка ресторанов -->
+            <label class="input-label">
+              <span class="input-title">Какой ресторан посещаете чаще?</span>
+              <select class="select-rest" name="restaurant" id="restaurant" required>
+                <option value="" disabled selected> -- Выберите основной ресторан -- </option>
                 <option value="moscow">Ресторан в Москве</option>
                 <option value="piter">Ресторан в Санкт-Петербурге</option>
                 <option value="kazan">Ресторан в Казани</option>
               </select>
+            </label>
+            <!-- Чекбокс согласие с условиями -->
               <div class="input-checkbox">
-                <input class="checkbox" type="checkbox" id="agree" />
+                <input class="checkbox" type="checkbox" id="agree" name="agree" required>
                 <label for="agree">
                   <a class="checkbox-link" href="loyalty.html"
-                    >Я принимаю условия программы <br>лояльности</a
-                  >
+                    >Я принимаю <class="checkbox-link" href="loyalty.html" target="_blank">условия программы лояльности</a>
                 </label>
               </div>
+              <!-- Кнопка отправки формы -->
               <div class="button">
                 <input type="submit" value="Отправить" class="input-button" />
               </div>
-            </section>
           </form>
         </section>
       </section>
+    <!-- преимущества программы -->   
+    <div>       
       <section>
         <header class="header">Присоединяйся!</header>
         <p class="second-header-text">
@@ -88,6 +89,7 @@
         </ul>
       </section>
     </div>
+    <!-- Отзыв -->
     <section class="loyalty">
       <p class="loyalty-content">
         «Программа лояльности в вашем ресторане превзошла все мои ожидания!
