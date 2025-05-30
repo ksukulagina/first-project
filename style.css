@@ -1,138 +1,128 @@
-.gradient {
-  padding: 35px;
-  width: auto;
-  height: 203px;
-  background: 030427;
+.gradient { /* Блок с градиентом вверху */
+  height: 200px; /* Высота блока */
   background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(23, 159, 184, 1) 50%,
-    rgba(2, 210, 253, 1) 100%
+    90deg,                        /* Направление градиента — слева направо */
+    rgba(0, 0, 0, 1) 0%,         /* Чёрный цвет — слева */
+    rgba(23, 159, 184, 1) 50%,   /* Бирюзовый — посередине */
+    rgba(2, 210, 253, 1) 100%    /* Голубой — справа */
   );
-  border-radius: 30px;
+  border-radius: 30px; /* Скруглённые углы */
 }
 
-.content-box {
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-  gap: 102px;
-  padding-top: 35px;
-  padding-bottom: 35px;
+.content-box { /* контейнер, делит страницу на 2 колонки: форма и описание */
+  display: grid; /* Расположение дочерних блоков в сетке */
+  grid-template-columns: 2fr 3fr; /* Делим на 2 и 3 части — левая уже, правая шире */
+  gap: 80px; /* Отступ между колонками */
+  padding: 40px 0; /* Отступ сверху и снизу */
 }
 
-.overlay {
-  width: auto;
-  height: 938px;
-  background-color: #eff8ff;
-  border-radius: 35px;
-  padding: 0;
+.overlay { /* фон блока справа */
+  background-color: #eff8ff; /* Светло-голубой фон */
+  border-radius: 30px; /* Скругление углов */
 }
 
-.form-box {
-  padding: 25px 34px 65px 33px;
+.form-box { /* блок с формой слева */
+  padding: 24px; /* Внутренний отступ со всех сторон */
 }
 
-.form-header {
-  width: 507px;
-  height: auto;
-  background-color: #00416a;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+.form-header { /* верхняя синяя шапка формы */
+  background-color: #00416a; /* Тёмно-синий фон */
+  border-radius: 30px 30px 0 0; /* Скруглённые только верхние углы */
+  color: #ffffff; /* Белый текст */
 }
 
-.text-part {
-  padding: 6px 101px 6px 26px;
-  gap: 20px;
-  color: #ffffff;
+.text-part { /* текст в шапке */
+  padding: 16px; /* Отступ внутри блока */
+  color: #ffffff; /* Белый цвет текста */
 }
 
-.header-text {
+.header-text { /* заголовок в шапке */
+  font-family: "Montserrat", sans-serif; /* Шрифт */
+  font-weight: 700; /* Толщина — жирный */
+  font-size: 28px; /* Размер текста */
+  padding: 0 12px;
+}
+
+.header-bottom-text { /* подзаголовок в шапке */
   font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 30px;
-}
-
-.header-bottom-text {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
+  font-weight: 500; /* Чуть менее жирный */
   font-size: 20px;
+  padding: 0 12px;
 }
 
-.input-label {
-  display: flex;
-  flex-direction: column;
-  padding-top: 33px;
+
+.input-label { /* обертка для формы */
+  display: flex; /* Включаем флекс-блок */
+  flex-direction: column; /* Элементы по вертикали */
+  margin-top: 20px; /* Отступ сверху между блоками */
 }
 
-.input-title {
+.input-title { /* подпись на полями */
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
+  font-weight: 400; /* Обычный шрифт */
+  font-size: 16px;
+  margin-bottom: 8px; /* Отступ снизу до поля */
 }
 
-.input {
-  width: 507px;
-  height: 54px;
-  background-color: #ffffff;
-  border-radius: 5px;
-  border: 1px solid #000;
+.input { /* поле ввода */
+  width: 100%; /* Полная ширина */
+  height: 48px;
+  background-color: #ffffff; /* Белый фон */
+  border-radius: 10px;
+  border: 1px solid #000; /* Чёрная рамка */
   font-family: "Roboto", sans-serif;
-  font-size: 22px;
+  font-size: 16px;
+  padding: 0 12px; /* Отступ внутри слева и справа */
+  box-sizing: border-box; /* Вся ширина включает padding и border */
 }
 
-.select-input {
-  padding-top: 33px;
-  gap: 4px;
-}
-
-.select-rest {
+.select-rest { /* выпадашка */
   width: 100%;
-  height: auto;
-  padding: 10px 14px;
-  line-height: 1.2;
-  font-size: 20px;
+  height: 48px;
+  padding: 0 12px;
+  font-size: 16px;
   font-family: "Roboto", sans-serif;
   border: 1px solid #000;
-  border-radius: 5px;
-  appearance: none;
-  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='16' viewBox='0 0 24 24' width='16' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  border-radius: 10px;
+  appearance: none; /* Убираем стандартный вид */
+  background-image: url("data:image/svg+xml..."); /* Добавляем иконку стрелочки */
   background-repeat: no-repeat;
   background-position: right 12px center;
-  background-size: 30px;
+  background-size: 16px; /* Размер стрелочки */
 }
 
-.input-checkbox {
-  display: flex;
-  padding-top: 31px;
-  align-items: flex-start;
-  width: 354px;
-  gap: 12px;
+.input-checkbox { /* обертка для чекбокса и текста */
+  display: flex; /* Горизонтальное расположение */
+  margin-top: 20px;
+  align-items: center; /* Выравнивание по вертикали */
+  gap: 12px; /* Расстояние между галочкой и текстом */
 }
 
-.checkbox {
-  -webkit-appearance: none;
+.checkbox {  /* чекбокс */
   appearance: none;
-  width: 24px;
-  height: 24px;
+  width: 20px;              /* Фиксированная ширина */
+  height: 20px;             /* Фиксированная высота */
+  min-width: 20px;          /* Запрет на уменьшение */
+  min-height: 20px;
+  max-width: 20px;          /* Запрет на увеличение */
+  max-height: 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: #ffffff;
   cursor: pointer;
   position: relative;
-  margin-top: 2px;
-  display: inline-block;
 }
 
-.checkbox:checked {
+.checkbox:checked { /* выбранный чекбокс */
   background-color: #2e7cf6;
   border: none;
 }
 
-.checkbox:checked::after {
+.checkbox:checked::after { /* галочка */
   content: "";
   position: absolute;
-  top: 4px;
-  left: 7px;
+  top: 1px;
+  left: 6px;
   width: 6px;
   height: 12px;
   border: solid white;
@@ -140,78 +130,69 @@
   transform: rotate(45deg);
 }
 
-.checkbox-link {
+.checkbox-link { /* условия лояльности */
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
-  word-break: break-word;
-  white-space: normal;
-  display: inline-block;
 }
 
 .button {
-  padding-top: 64px;
+  margin-top: 24px;
 }
 
-.input-button {
+.input-button { /* кнопулечка */
   width: 100%;
-  height: auto;
-  background-color: rgba(8, 57, 128, 1);
+  background-color: #083980;
   color: #ffffff;
   border-radius: 15px;
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 18px 0;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 14px;
   text-align: center;
   cursor: pointer;
+  border: none;
 }
 
-.header {
+.header { /* присоединяйся */
   font-family: "Montserrat", sans-serif;
-  font-size: 40px;
-  font-weight: bold;
-  padding-top: 6px;
-  padding-bottom: 44px;
+  font-size: 36px;
+  font-weight: 700;
+  padding-bottom: 24px;
 }
 
-.second-header-text {
+.second-header-text { /* участие в программе лояльности... */
   font-family: "Montserrat", sans-serif;
-  font-size: 22px;
-  font-weight: medium;
-  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
 }
 
-.point-list {
-  padding: 22px 60px;
-}
-
-.point {
+.point-list-text { /* преимущества */
   font-family: "Montserrat", sans-serif;
-  font-size: 22px;
-  font-weight: medium;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 12px; /* Отступ сверху */
+  margin-bottom: 0; /* Убираем отступ снизу */
 }
 
 .loyalty {
-  padding: 35px;
-  margin: 0 auto;
+  padding: 24px;
   background: #eff8ff;
   border-radius: 30px;
 }
 
 .loyalty-content {
   font-family: "Montserrat", sans-serif;
-  font-size: 21px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 500;
   font-style: italic;
-  line-height: 1.3;
+  line-height: 1.4;
 }
 
 .link-back {
-  display: inline-block;
-  font-size: 16px;
+  font-size: 18px;
   text-decoration: underline;
-  margin-bottom: 30px;
+  display: inline-block;
 }
 
 .top-line {
@@ -221,34 +202,14 @@
   margin-bottom: 20px;
 }
 
-.h1 {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-
-h2 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-top: 40px;
-  margin-bottom: 20px;
-}
-
 .loyalty-list {
   list-style: none;
   padding-left: 0;
+  margin-top: 0;        
   margin-bottom: 30px;
 }
 
-.loyalty-list-item {
-  margin: 0;
-  padding-left: 0;
-}
-
-.loyalty-list .loyalty-list-item {
-  margin-bottom: 12px;
-}
-
 .strong {
-  font-weight: 700px;
+  font-weight: 500;
 }
+
