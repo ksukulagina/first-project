@@ -15,16 +15,18 @@ body {
   border-radius: 30px; /* Скруглённые углы */
 }
 
-.content-box { /* контейнер, делит страницу на 2 колонки: форма и описание */
-  display: grid; /* Расположение блоков в сетке */
-  grid-template-columns: 2fr 3fr; /*  */
-  gap: 80px; /* Отступ между колонками */
-  padding: 40px 0; /* Отступ сверху и снизу */
+.content-box { 
+  display: flex;              
+  gap: 80px;                
+  padding: 40px 0;   
 }
 
 .overlay { /* фон блока слева */
-  background-color: #eff8ff; /* Светло-голубой фон */
-  border-radius: 30px; /* Скругление углов */
+  background-color: #eff8ff;
+  border-radius: 30px;
+  flex: 2;                   
+  display: flex;           
+  flex-direction: column;
 }
 
 .form-box { /* блок с формой */
@@ -56,7 +58,7 @@ body {
 
 
 .input-label { /* обертка для формы */
-  display: flex; /* Включаем флекс-блок */
+  display: flex; /* флекс-блок */
   flex-direction: column; /* Элементы по вертикали */
   margin-top: 24px; /* Отступ сверху между блоками */
 }
