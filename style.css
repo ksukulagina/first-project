@@ -11,53 +11,51 @@
 
 .content-box { /* контейнер, делит страницу на 2 колонки: форма и описание */
   display: grid; /* Расположение блоков в сетке */
-  grid-template-columns: 2fr 3fr; /* Делим на 2 и 3 части — левая уже, правая шире */
+  grid-template-columns: 2fr 3fr; /*  */
   gap: 80px; /* Отступ между колонками */
   padding: 40px 0; /* Отступ сверху и снизу */
 }
 
-.overlay { /* фон блока справа */
+.overlay { /* фон блока слева */
   background-color: #eff8ff; /* Светло-голубой фон */
   border-radius: 30px; /* Скругление углов */
 }
 
-.form-box { /* блок с формой слева */
+.form-box { /* блок с формой */
   padding: 24px; /* Внутренний отступ со всех сторон */
 }
 
 .form-header { /* верхняя синяя шапка формы */
   background-color: #00416a; /* Тёмно-синий фон */
   border-radius: 30px 30px 0 0; /* Скруглённые только верхние углы */
-  color: #ffffff; /* Белый текст */
 }
 
 .text-part { /* текст в шапке */
-  padding: 16px; /* Отступ внутри блока */
+  padding: 12px; /* Отступ внутри блока */
   color: #ffffff; /* Белый цвет текста */
+  margin: 20px
 }
 
 .header-text { /* заголовок в шапке */
   font-family: "Montserrat", sans-serif; /* Шрифт */
   font-weight: 700; /* Толщина — жирный */
   font-size: 28px; /* Размер текста */
-  padding: 0 12px;
 }
 
 .header-bottom-text { /* подзаголовок в шапке */
   font-family: "Montserrat", sans-serif;
-  font-weight: 500; /* Чуть менее жирный */
+  font-weight: 400; /* Чуть менее жирный */
   font-size: 20px;
-  padding: 0 12px;
 }
 
 
 .input-label { /* обертка для формы */
   display: flex; /* Включаем флекс-блок */
   flex-direction: column; /* Элементы по вертикали */
-  margin-top: 20px; /* Отступ сверху между блоками */
+  margin-top: 24px; /* Отступ сверху между блоками */
 }
 
-.input-title { /* подпись на полями */
+.input-title { /* подпись наl полями */
   font-family: "Roboto", sans-serif;
   font-weight: 400; /* Обычный шрифт */
   font-size: 16px;
@@ -65,7 +63,7 @@
 }
 
 .input { /* поле ввода */
-  width: 100%; /* Полная ширина */
+  width: 100%; 
   height: 48px;
   background-color: #ffffff; /* Белый фон */
   border-radius: 10px;
@@ -89,7 +87,6 @@
 .input-checkbox { /* обертка для чекбокса и текста */
   margin-top: 20px;
   align-items: center; /* Выравнивание по вертикали */
-  gap: 12px; /* Расстояние между галочкой и текстом */
 }
 
 
@@ -101,6 +98,7 @@
 
 .button {
   margin-top: 24px;
+  margin-bottom: 12px
 }
 
 .input-button { /* кнопулечка */
@@ -110,7 +108,7 @@
   border-radius: 15px;
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   padding: 14px;
   text-align: center;
   cursor: pointer;
@@ -120,22 +118,19 @@
 .header { /* присоединяйся */
   font-family: "Montserrat", sans-serif;
   font-size: 36px;
-  font-weight: 700;
-  padding-bottom: 24px;
+  font-weight: 600;
 }
 
 .second-header-text { /* участие в программе лояльности... */
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .point-list-text { /* преимущества */
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-weight: 500;
-  margin-top: 12px; /* Отступ сверху */
-  margin-bottom: 0; /* Убираем отступ снизу */
 }
 
 .loyalty {
