@@ -1,3 +1,9 @@
+body {
+  border: 2px solid #eef2ff; /* толщина, стиль и цвет рамки */
+  padding: 40px; /* чтобы контент не прилипал к рамке */
+  border-radius: 60px
+}
+
 .gradient { /* Блок с градиентом вверху */
   height: 200px; /* Высота блока */
   background: linear-gradient(
@@ -166,4 +172,3 @@
   margin-top: 0;        
   margin-bottom: 30px;
 }
-
