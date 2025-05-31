@@ -15,16 +15,15 @@ body {
   border-radius: 30px; /* Скруглённые углы */
 }
 
-.content-box { 
+.content-box { /* контейнер, делит страницу на 2 колонки: форма и описание */
   display: flex;              
-  gap: 80px;                
+  gap: 80px;                  /* Отступ между колонками */
   padding: 40px 0;   
 }
 
 .overlay { /* фон блока слева */
   background-color: #eff8ff;
-  border-radius: 30px;
-  flex: 2;                   
+  border-radius: 30px;                  
   display: flex;           
   flex-direction: column;
 }
@@ -58,7 +57,7 @@ body {
 
 
 .input-label { /* обертка для формы */
-  display: flex; /* флекс-блок */
+  display: flex; /* Включаем флекс-блок */
   flex-direction: column; /* Элементы по вертикали */
   margin-top: 24px; /* Отступ сверху между блоками */
 }
