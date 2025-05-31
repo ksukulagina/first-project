@@ -3,43 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <title>Регистрация в программе лояльности</title>
-    <!-- Подключение шрифта и стилей из css -->
-    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <!-- Блок с градиентом -->
     <div class="gradient"></div>
+    
     <!-- Основной контейнер с контентом -->
     <div class="content-box">
-      <section class="overlay">
+      <div class="overlay">
         <!-- Сама форма -->
-        <section class="form-box">
+        <div class="form-box">
           <!-- Заголовок формы -->
-          <section class="form-header">
+          <div class="form-header">
             <div class="text-part">
               <p class="header-text">Добро пожаловать!</p>
-              <p class="header-bottom-text">Заполните эту форму, чтобы зарегистрироваться и начать
-                пользоваться нашими услугами</p>
+              <p class="header-bottom-text">
+                Заполните эту форму, чтобы зарегистрироваться и начать
+                пользоваться нашими услугами
+              </p>
             </div>
-          </section>
+          </div>
+          
           <!-- Поля регистрации -->
-          <form method="get" action="../result">
+          <form method="get">
             <!-- Поле имя -->
             <label class="input-label">
               <span class="input-title">Ваше имя</span>
               <input class="input" type="text" size="40" name="name" required />
             </label>
+
             <!-- Поле телефон -->
             <label class="input-label">
               <span class="input-title">Телефон</span>
               <input class="input" type="tel" size="40" name="phone" required />
             </label>
+
             <!-- Поле почты -->
             <label class="input-label">
               <span class="input-title">Email (опционально)</span>
               <input class="input" type="email" size="40" name="email"/>
-           <!-- Выпадашка ресторанов -->
+            </label>
+
+            <!-- Выпадашка ресторанов -->
             <label class="input-label">
               <span class="input-title">Какой ресторан посещаете чаще?</span>
               <select class="select-rest" name="restaurant" id="restaurant" required>
@@ -49,55 +57,60 @@
                 <option value="kazan">Ресторан в Казани</option>
               </select>
             </label>
+
             <!-- Чекбокс согласие с условиями -->
-              <div class="input-checkbox">
-                <input class="checkbox" type="checkbox" id="agree" name="agree" required>
-                <label for="agree">
-                  <a class="checkbox-link" href="loyalty.html" target="_blank"
-                    >Я принимаю <class="checkbox-link">условия программы лояльности</a>
-                </label>
-              </div>
-              <!-- Кнопка отправки формы -->
-              <div class="button">
-                <input type="submit" value="Отправить" class="input-button" />
-              </div>
+            <div class="input-checkbox">
+              <input class="checkbox" type="checkbox" id="agree" name="agree" required>
+              <label for="agree">
+                <a class="checkbox-link" href="loyalty.html" target="_blank">
+                  Я принимаю условия программы лояльности
+                </a>
+              </label>
+            </div>
+
+            <!-- Кнопка отправки формы -->
+            <div class="button">
+              <input type="submit" value="Отправить" class="input-button" />
+            </div>
           </form>
-        </section>
-      </section>
-    <!-- преимущества программы -->   
-    <div>       
-      <section>
-        <header class="header">Присоединяйся!</header>
-        <p class="second-header-text">
-          Участие в программе лояльности дает возможность получать скидки,
-          специальные предложения и накапливать баллы для использования их при
-          совершении покупок.
-        </p>
-        <span class="point-list-text">Ключевые преимущества:</span>
-        <ul class="point-list-text">
-          <li class="point">
-            накопление бонусов и возможность использовать их для оплаты
-          </li>
-          <li class="point">
-            отслеживание истории покупок и анализ предпочтений
-          </li>
-          <li class="point">участие в акциях и розыгрышах</li>
-          <li class="point">персонализированные предложения и рекомендации</li>
-          <li class="point">
-            возможность учавствовать в программах лояльности партнёров
-          </li>
-        </ul>
-      </section>
+        </div>
+      </div>
+
+      <!-- Преимущества программы -->
+      <div>
+        <div>
+          <div class="header">Присоединяйся!</div>
+          <p class="second-header-text">
+            Участие в программе лояльности дает возможность получать скидки,
+            специальные предложения и накапливать баллы для использования их при
+            совершении покупок.
+          </p>
+          <span class="point-list-text">Ключевые преимущества:</span>
+          <ul class="point-list-text">
+            <li class="point">
+              накопление бонусов и возможность использовать их для оплаты
+            </li>
+            <li class="point">
+              отслеживание истории покупок и анализ предпочтений
+            </li>
+            <li class="point">участие в акциях и розыгрышах</li>
+            <li class="point">персонализированные предложения и рекомендации</li>
+            <li class="point">
+              возможность участвовать в программах лояльности партнёров
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </div>
+
     <!-- Отзыв -->
-    <section class="loyalty">
+    <div class="loyalty">
       <p class="loyalty-content">
         «Программа лояльности в вашем ресторане превзошла все мои ожидания!
-        Бонусы, скидки и индивидульный подход сделали мое посещение
+        Бонусы, скидки и индивидуальный подход сделали мое посещение
         незабываемым. Я обязательно порекомендую этот ресторан своим друзьям и
         близким.» Вероника
       </p>
-    </section>
+    </div>
   </body>
 </html>
