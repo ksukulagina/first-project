@@ -30,25 +30,25 @@
           <!-- Поля регистрации -->
           <form action="" method="get">
             <!-- Поле имя -->
-            <label class="input-label">
+            <label for="name" class="input-label">
               <span class="input-title">Ваше имя</span>
               <input class="input" type="text" size="40" name="name" required />
             </label>
 
             <!-- Поле телефон -->
-            <label class="input-label">
+            <label for="phone" class="input-label">
               <span class="input-title">Телефон</span>
               <input class="input" type="tel" size="40" name="phone" required />
             </label>
 
             <!-- Поле почты -->
-            <label class="input-label">
+            <label for="email" class="input-label">
               <span class="input-title">Email (опционально)</span>
               <input class="input" type="email" size="40" name="email"/>
             </label>
 
             <!-- Выпадашка ресторанов -->
-            <label class="input-label">
+            <label for="restaurant" class="input-label">
               <span class="input-title">Какой ресторан посещаете чаще?</span>
               <select class="select-rest" name="restaurant" id="restaurant" required>
                 <option value="" disabled selected> -- Выберите основной ресторан -- </option>
@@ -61,10 +61,8 @@
             <!-- Чекбокс согласие с условиями -->
             <div class="input-checkbox">
               <input class="checkbox" type="checkbox" id="agree" name="agree" required>
-              <label for="agree">
-                <a class="checkbox-link" href="loyalty.html" target="_blank">
-                  Я принимаю условия программы лояльности
-                </a>
+              <label for="agree" class="checkbox-link">
+                Я принимаю <a href="loyalty.html" target="_blank">условия программы лояльности</a>
               </label>
             </div>
 
